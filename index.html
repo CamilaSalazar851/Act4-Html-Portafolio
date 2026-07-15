@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Camila Salazar - Portafolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Sora:wght@400;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="gutter" aria-hidden="true">
+  <span>01</span>
+  <span>02</span>
+  <span>03</span>
+  <span>04</span>
+</div>
+
+<header class="topbar">
+  <div class="traffic-lights">
+    <span class="dot red"></span>
+    <span class="dot yellow"></span>
+    <span class="dot green"></span>
+  </div>
+  <nav class="tabs">
+    <button class="tab active" data-target="inicio">inicio.js</button>
+    <button class="tab" data-target="sobre-mi">sobre-mi.js</button>
+    <button class="tab" data-target="proyectos">proyectos.js</button>
+    <button class="tab" data-target="contacto">contacto.js</button>
+  </nav>
+</header>
+
+<main>
+
+  <section id="inicio" class="pantalla activa">
+    <p class="ruta">~/camila-salazar/portafolio</p>
+    <h1 class="titulo-hero">
+      <span class="prompt">const</span> desarrolladora = <span class="cadena">"Camila Salazar"</span>;
+    </h1>
+    <p class="subtitulo">
+      <span class="cursor-terminal" id="texto-rotativo"></span>
+    </p>
+    <p class="descripcion-hero">
+      Estudiante de desarrollo web construyendo proyectos con HTML, CSS y JavaScript.
+      Aprendiendo resolviendo problemas reales, un commit a la vez.
+    </p>
+    <div class="acciones-hero">
+      <button class="boton-primario" data-target="proyectos">Ver proyectos</button>
+      <a class="boton-secundario" href="https://github.com/CamilaSalazar851" target="_blank" rel="noopener">GitHub</a>
+    </div>
+  </section>
+
+  <section id="sobre-mi" class="pantalla">
+    <p class="etiqueta">// 02 sobre-mi</p>
+    <h2 class="titulo-seccion">Sobre mí</h2>
+    <div class="grid-sobre-mi">
+      <div class="bloque-texto">
+        <p>
+          Soy estudiante de un programa de formación en desarrollo web. Trabajo construyendo
+          proyectos desde cero, iterando por partes hasta que el resultado funciona y se ve bien.
+        </p>
+        <p>
+          Me interesa el frontend con JavaScript vanilla y entender cómo conectar una interfaz
+          con una base de datos real. Mi último proyecto grande usa Firebase Realtime Database
+          para gestionar inventario de producción.
+        </p>
+      </div>
+      <div class="bloque-stack">
+        <p class="etiqueta-stack">tecnologias.json</p>
+        <ul class="lista-stack">
+          <li><span class="punto"></span>Python</li>
+          <li><span class="punto"></span>HTML5</li>
+          <li><span class="punto"></span>CSS3</li>
+          <li><span class="punto"></span>JavaScript</li>
+          <li><span class="punto"></span>Firebase Realtime Database</li>
+          <li><span class="punto"></span>Git / GitHub</li>
+          <li><span class="punto"></span>Web Components</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="proyectos" class="pantalla">
+    <p class="etiqueta">// 03 proyectos</p>
+    <h2 class="titulo-seccion">Proyectos</h2>
+    <div class="grid-proyectos">
+
+      <article class="tarjeta-proyecto">
+        <p class="numero-linea">01</p>
+        <h3>Acme Producción</h3>
+        <p class="descripcion-proyecto">
+          Sistema de gestión de inventario para una planta de producción ficticia. Registro de
+          producción, control de materia prima y reportes filtrables por año y mes, conectado
+          a Firebase Realtime Database.
+        </p>
+        <div class="tags">
+          <span>JavaScript</span>
+          <span>Firebase</span>
+          <span>Web Components</span>
+        </div>
+        <a class="enlace-proyecto" href="https://github.com/CamilaSalazar851" target="_blank" rel="noopener">Ver en GitHub →</a>
+      </article>
+
+      <article class="tarjeta-proyecto">
+        <p class="numero-linea">02</p>
+        <h3>Explorador PokéAPI</h3>
+        <p class="descripcion-proyecto">
+          Aplicación que consume la PokéAPI para mostrar información de Pokémon en tarjetas
+          con estilo visual propio, trabajando con fetch y renderizado dinámico del DOM.
+        </p>
+        <div class="tags">
+          <span>JavaScript</span>
+          <span>API REST</span>
+          <span>CSS</span>
+        </div>
+        <a class="enlace-proyecto" href="https://github.com/CamilaSalazar851" target="_blank" rel="noopener">Ver en GitHub →</a>
+      </article>
+
+      <article class="tarjeta-proyecto">
+        <p class="numero-linea">03</p>
+        <h3>Patitas Felices</h3>
+        <p class="descripcion-proyecto">
+          Sitio web para una fundación ficticia de rescate y adopción de animales. Diseño
+          responsivo con galería tipo masonry, tarjetas de adopción y formulario de contacto.
+        </p>
+        <div class="tags">
+          <span>HTML</span>
+          <span>CSS</span>
+          <span>Flexbox</span>
+        </div>
+        <a class="enlace-proyecto" href="https://github.com/CamilaSalazar851" target="_blank" rel="noopener">Ver en GitHub →</a>
+      </article>
+
+    </div>
+  </section>
+
+  <section id="contacto" class="pantalla">
+    <p class="etiqueta">// 04 contacto</p>
+    <h2 class="titulo-seccion">Contacto</h2>
+    <p class="descripcion-contacto">
+      Escríbeme si quieres hablar de un proyecto, una oportunidad, o simplemente comentar
+      algo de código.
+    </p>
+    <div class="grid-contacto">
+      <a class="enlace-contacto" href="mailto:tuemail@ejemplo.com">
+        <span class="etiqueta-enlace">email</span>
+        <span class="valor-enlace">salazarcastanedac6@gmail.com</span>
+      </a>
+      <a class="enlace-contacto" href="https://github.com/CamilaSalazar851" target="_blank" rel="noopener">
+        <span class="etiqueta-enlace">github</span>
+        <span class="valor-enlace">CamilaSalazar851</span>
+      </a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="statusbar">
+  <span>UTF-8</span>
+  <span id="reloj-status"></span>
+  <span>Camila Salazar © 2026</span>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
